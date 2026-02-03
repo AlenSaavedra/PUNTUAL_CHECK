@@ -1,4 +1,4 @@
-﻿using API_PUNTUALCHECK.Models;
+using API_PUNTUALCHECK.Models;
 using API_PUNTUALCHECK.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -34,10 +34,17 @@ namespace API_PUNTUALCHECK.Controllers
                 })
                 .AsQueryable();
 
-            if (estudianteId.HasValue) q = q.Where(x => x.EstudianteId == estudianteId);
-            if (fechaDesde != null) q = q.Where(x => x.Fecha >= DateOnly.Parse(fechaDesde));
-            if (fechaHasta != null) q = q.Where(x => x.Fecha <= DateOnly.Parse(fechaHasta));
-            if (estado != null) q = q.Where(x => x.Estado == estado.ToUpper());
+            if (estudianteId.HasValue)
+                q = q.Where(x => x.EstudianteId == estudianteId);
+
+            if (fechaDesde != null)
+                q = q.Where(x => x.Fecha.Date >= DateTime.Parse(fechaDesde).Date);
+
+            if (fechaHasta != null)
+                q = q.Where(x => x.Fecha.Date <= DateTime.Parse(fechaHasta).Date);
+
+            if (estado != null)
+                q = q.Where(x => x.Estado == estado.ToUpper());
 
             return Ok(await q.OrderByDescending(x => x.Fecha).ToListAsync());
         }
@@ -72,7 +79,7 @@ namespace API_PUNTUALCHECK.Controllers
 
                 if (horario != null)
                 {
-                    var limite = horario.HoraEntrada.AddMinutes(horario.ToleranciaMinutos);
+                    var limite = horario.HoraEntrada.Add(TimeSpan.FromMinutes(horario.ToleranciaMinutos));
                     a.Estado = a.Hora <= limite ? "PRESENTE" : "TARDANZA";
                 }
             }
@@ -81,7 +88,6 @@ namespace API_PUNTUALCHECK.Controllers
             await db.SaveChangesAsync();
             return Ok(a);
         }
-
 
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] Asistencia datos)
@@ -102,6 +108,7 @@ namespace API_PUNTUALCHECK.Controllers
         {
             var a = await db.Asistencias.FindAsync(id);
             if (a == null) return NotFound();
+
             db.Asistencias.Remove(a);
             await db.SaveChangesAsync();
             return NoContent();
