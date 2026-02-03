@@ -20,7 +20,7 @@ namespace API_PUNTUALCHECK.Utils
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-            mb.HasDefaultSchema("Main");
+            //mb.HasDefaultSchema("Main");
 
             mb.Entity<Usuario>().ToTable("usuarios");
             mb.Entity<Estudiante>().ToTable("estudiantes");
