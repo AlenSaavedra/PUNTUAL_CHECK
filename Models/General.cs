@@ -104,7 +104,8 @@ namespace API_PUNTUALCHECK.Models
         public string? DiaSemana { get; set; }
 
         [Column("hora_entrada")]
-        public TimeOnly HoraEntrada { get; set; }
+        public TimeSpan HoraEntrada { get; set; }
+
 
         [Column("tolerancia_minutos")]
         public int ToleranciaMinutos { get; set; } = 10;
@@ -124,10 +125,11 @@ namespace API_PUNTUALCHECK.Models
         public int EstudianteId { get; set; }
 
         [Column("fecha")]
-        public DateOnly Fecha { get; set; }
-
+        public DateTime Fecha { get; set; }
+        
         [Column("hora")]
-        public TimeOnly Hora { get; set; }
+        public TimeSpan Hora { get; set; }
+
 
         [Column("estado")]
         public string? Estado { get; set; }
@@ -156,7 +158,8 @@ namespace API_PUNTUALCHECK.Models
         public int RepresentanteId { get; set; }
 
         [Column("fecha_evento")]
-        public DateOnly FechaEvento { get; set; }
+        public DateTime FechaEvento { get; set; }
+
 
         [Column("tipo")]
         public string? Tipo { get; set; }
