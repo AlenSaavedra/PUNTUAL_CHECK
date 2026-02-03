@@ -1,3 +1,6 @@
+using API_PUNTUALCHECK.Utils;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurar el puerto para Railway/nube
@@ -12,13 +15,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configurar DbContext con MySQL
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySQL(connectionString));
+
 var app = builder.Build();
 
-// Habilitar Swagger en producción también (para que puedas probar la API)
+// Habilitar Swagger siempre (para testing en producción)
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// Comentar esta línea para evitar problemas con HTTPS en Railway
+// Comentar HTTPS redirect para Railway
 // app.UseHttpsRedirection();
 
 app.UseAuthorization();
