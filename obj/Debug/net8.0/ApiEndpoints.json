@@ -1,0 +1,587 @@
+[
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.AsistenciaController",
+    "Method": "GetAll",
+    "RelativePath": "api/asistencias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudianteId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaDesde",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaHasta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.AsistenciaController",
+    "Method": "Create",
+    "RelativePath": "api/asistencias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "a",
+        "Type": "API_PUNTUALCHECK.Models.Asistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.AsistenciaController",
+    "Method": "GetById",
+    "RelativePath": "api/asistencias/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.AsistenciaController",
+    "Method": "Update",
+    "RelativePath": "api/asistencias/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "API_PUNTUALCHECK.Models.Asistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.AsistenciaController",
+    "Method": "Delete",
+    "RelativePath": "api/asistencias/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstRepController",
+    "Method": "GetAll",
+    "RelativePath": "api/estudiante-representante",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstRepController",
+    "Method": "Create",
+    "RelativePath": "api/estudiante-representante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "er",
+        "Type": "API_PUNTUALCHECK.Models.EstudianteRepresentante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstRepController",
+    "Method": "Delete",
+    "RelativePath": "api/estudiante-representante/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstRepController",
+    "Method": "GetByEstudiante",
+    "RelativePath": "api/estudiante-representante/por-estudiante/{estudianteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudianteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "GetAll",
+    "RelativePath": "api/estudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "Create",
+    "RelativePath": "api/estudiantes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "API_PUNTUALCHECK.Models.Estudiante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "GetById",
+    "RelativePath": "api/estudiantes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "Update",
+    "RelativePath": "api/estudiantes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "API_PUNTUALCHECK.Models.Estudiante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "Delete",
+    "RelativePath": "api/estudiantes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.EstudianteController",
+    "Method": "RegenerarQr",
+    "RelativePath": "api/estudiantes/{id}/regenerar-qr",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.HorarioController",
+    "Method": "GetAll",
+    "RelativePath": "api/horarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.HorarioController",
+    "Method": "Create",
+    "RelativePath": "api/horarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "h",
+        "Type": "API_PUNTUALCHECK.Models.Horario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.HorarioController",
+    "Method": "GetById",
+    "RelativePath": "api/horarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.HorarioController",
+    "Method": "Update",
+    "RelativePath": "api/horarios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "API_PUNTUALCHECK.Models.Horario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.HorarioController",
+    "Method": "Delete",
+    "RelativePath": "api/horarios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.NotificacionController",
+    "Method": "GetAll",
+    "RelativePath": "api/notificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudianteId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "estadoEnvio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.NotificacionController",
+    "Method": "Create",
+    "RelativePath": "api/notificaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "n",
+        "Type": "API_PUNTUALCHECK.Models.Notificacion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.NotificacionController",
+    "Method": "GetById",
+    "RelativePath": "api/notificaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.NotificacionController",
+    "Method": "Delete",
+    "RelativePath": "api/notificaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.NotificacionController",
+    "Method": "UpdateEstado",
+    "RelativePath": "api/notificaciones/{id}/estado-envio/{nuevoEstado}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.RepresentanteController",
+    "Method": "GetAll",
+    "RelativePath": "api/representantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.RepresentanteController",
+    "Method": "Create",
+    "RelativePath": "api/representantes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "r",
+        "Type": "API_PUNTUALCHECK.Models.Representante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.RepresentanteController",
+    "Method": "GetById",
+    "RelativePath": "api/representantes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.RepresentanteController",
+    "Method": "Update",
+    "RelativePath": "api/representantes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "API_PUNTUALCHECK.Models.Representante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.RepresentanteController",
+    "Method": "Delete",
+    "RelativePath": "api/representantes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.UsuarioController",
+    "Method": "GetAll",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.UsuarioController",
+    "Method": "Create",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u",
+        "Type": "API_PUNTUALCHECK.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.UsuarioController",
+    "Method": "GetById",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.UsuarioController",
+    "Method": "Update",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "API_PUNTUALCHECK.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PUNTUALCHECK.Controllers.UsuarioController",
+    "Method": "Delete",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

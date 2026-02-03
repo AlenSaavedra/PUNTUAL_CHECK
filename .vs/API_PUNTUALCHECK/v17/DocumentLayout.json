@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\api_puntualcheck.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:api_puntualcheck.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\utils\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:utils\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\notificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\notificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\estrepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\estrepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\controllers\\representantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:controllers\\representantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|c:\\users\\molin\\onedrive\\puntual_check\\api_puntualcheck\\utils\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC1D4E8-F843-4D9D-A3FF-E7C07E2D7C13}|API_PUNTUALCHECK.csproj|solutionrelative:utils\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\EstudianteController.cs",
+              "RelativeToolTip": "Controllers\\EstudianteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:21:00.404Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RepresentanteController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\RepresentanteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RepresentanteController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\RepresentanteController.cs",
+              "RelativeToolTip": "Controllers\\RepresentanteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:21:43.906Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstRepController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\EstRepController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstRepController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\EstRepController.cs",
+              "RelativeToolTip": "Controllers\\EstRepController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:21:59.226Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HorarioController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\HorarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HorarioController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\HorarioController.cs",
+              "RelativeToolTip": "Controllers\\HorarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:22:10.04Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAjwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:22:20.973Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificacionController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\NotificacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificacionController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\NotificacionController.cs",
+              "RelativeToolTip": "Controllers\\NotificacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:22:39.179Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "API_PUNTUALCHECK.csproj",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\API_PUNTUALCHECK.csproj",
+              "RelativeDocumentMoniker": "API_PUNTUALCHECK.csproj",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\API_PUNTUALCHECK.csproj",
+              "RelativeToolTip": "API_PUNTUALCHECK.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-03T02:41:51.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T03:29:03.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:31:27.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Utils\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Utils\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Utils\\AppDbContext.cs",
+              "RelativeToolTip": "Utils\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:26:56.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:12:31.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Utils\\Log.cs",
+              "RelativeDocumentMoniker": "Utils\\Log.cs",
+              "ToolTip": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\Utils\\Log.cs",
+              "RelativeToolTip": "Utils\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T02:42:49.806Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
