@@ -8,7 +8,7 @@ namespace API_PUNTUALCHECK.Controllers
     [Route("api/asistencias")]
     public class AsistenciaController(AppDbContext db) : ControllerBase
     {
-        // Filtros opcionales: estudianteId, fechaDesde, fechaHasta, estado
+        // Filtros opcionales: estudianteId, fechaDesde, fechaHasta, estado.
         [HttpGet]
         public async Task<IActionResult> GetAll(
             [FromQuery] int? estudianteId,
