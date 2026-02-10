@@ -42,6 +42,44 @@ namespace API_PUNTUALCHECK.Controllers
             return Ok(await q.OrderByDescending(x => x.CreatedAt).ToListAsync());
         }
 
+        [HttpGet("por-representante/{representanteId:int}")]
+        public async Task<IActionResult> GetByRepresentante(
+            int representanteId,
+            [FromQuery] string? estadoEnvio,
+            [FromQuery] string? tipo)
+        {
+            var q = db.Notificaciones
+                .Where(n => n.RepresentanteId == representanteId)
+                .Join(db.Estudiantes, n => n.EstudianteId, e => e.Id, (n, e) => new { n, e })
+                .Join(db.Usuarios, x => x.e.UsuarioId, u => u.Id, (x, u) => new
+                {
+                    x.n.Id,
+                    x.n.EstudianteId,
+                    x.n.RepresentanteId,
+                    x.n.FechaEvento,
+                    x.n.Tipo,
+                    x.n.Canal,
+                    x.n.EstadoEnvio,
+                    x.n.Detalle,
+                    x.n.CreatedAt,
+                    NombreEstudiante = u.Nombre,
+                    CodigoEstudiante = x.e.Codigo
+                })
+                .AsQueryable();
+
+            // Filtros opcionales
+            if (estadoEnvio != null) q = q.Where(x => x.EstadoEnvio == estadoEnvio.ToUpper());
+            if (tipo != null) q = q.Where(x => x.Tipo == tipo.ToUpper());
+
+            var resultado = await q.OrderByDescending(x => x.CreatedAt).ToListAsync();
+
+            if (!resultado.Any())
+                return NotFound(new { mensaje = "No se encontraron notificaciones para este representante" });
+
+            return Ok(resultado);
+        }
+        
+
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
