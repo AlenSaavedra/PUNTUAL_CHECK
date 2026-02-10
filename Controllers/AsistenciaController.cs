@@ -48,6 +48,7 @@ namespace API_PUNTUALCHECK.Controllers
             var a = await db.Asistencias.FindAsync(id);
             return a == null ? NotFound() : Ok(a);
         }
+        
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Asistencia a)
         {
@@ -63,6 +64,22 @@ namespace API_PUNTUALCHECK.Controllers
                 {
                     mensaje = "Ya existe un registro de asistencia para este estudiante en esta fecha"
                 });
+            }
+
+            // Obtener información del estudiante
+            var estudiante = await db.Estudiantes
+                .Where(e => e.Id == a.EstudianteId)
+                .Join(db.Usuarios, e => e.UsuarioId, u => u.Id, (e, u) => new
+                {
+                    e.Id,
+                    e.Codigo,
+                    Nombre = u.Nombre
+                })
+                .FirstOrDefaultAsync();
+
+            if (estudiante == null)
+            {
+                return NotFound(new { mensaje = "Estudiante no encontrado" });
             }
 
             if (a.Estado == "PRESENTE" || a.Estado == "TARDANZA")
@@ -88,8 +105,30 @@ namespace API_PUNTUALCHECK.Controllers
 
             db.Asistencias.Add(a);
             await db.SaveChangesAsync();
-            return Ok(a);
+
+            // Devolver asistencia con información del estudiante
+            return Ok(new
+            {
+                mensaje = "Asistencia registrada exitosamente",
+                asistencia = new
+                {
+                    a.Id,
+                    a.EstudianteId,
+                    a.Fecha,
+                    a.Hora,
+                    a.Estado,
+                    a.Origen,
+                    a.Observacion,
+                    a.CreatedAt
+                },
+                estudiante = new
+                {
+                    estudiante.Nombre,
+                    estudiante.Codigo
+                }
+            });
         }
+        
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] Asistencia datos)
         {
@@ -101,6 +140,7 @@ namespace API_PUNTUALCHECK.Controllers
             await db.SaveChangesAsync();
             return Ok(a);
         }
+        
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
