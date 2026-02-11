@@ -29,6 +29,9 @@ namespace API_PUNTUALCHECK.Utils
             mb.Entity<Horario>().ToTable("horarios");
             mb.Entity<Asistencia>().ToTable("asistencias");
             mb.Entity<Notificacion>().ToTable("notificaciones");
+            mb.Entity<Profesor>().ToTable("profesores");
+            mb.Entity<Curso>().ToTable("cursos");
+            mb.Entity<ProfesorCurso>().ToTable("profesor_curso");
         }
 
     }
