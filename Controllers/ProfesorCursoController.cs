@@ -1,10 +1,8 @@
 using API_PUNTUALCHECK.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-<<<<<<< HEAD
 using API_PUNTUALCHECK.Utils;
-=======
->>>>>>> 5fe029b6863df2921e0af858ed485891b07eea34
+
 
 namespace API_PUNTUALCHECK.Controllers
 {

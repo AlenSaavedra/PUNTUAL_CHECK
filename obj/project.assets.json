@@ -1707,11 +1707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\API_PUNTUALCHECK.csproj",
+      "projectUniqueName": "C:\\Users\\molin\\Downloads\\PUNTUAL_CHECK-master\\API_PUNTUALCHECK.csproj",
       "projectName": "API_PUNTUALCHECK",
-      "projectPath": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\API_PUNTUALCHECK.csproj",
+      "projectPath": "C:\\Users\\molin\\Downloads\\PUNTUAL_CHECK-master\\API_PUNTUALCHECK.csproj",
       "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\molin\\OneDrive\\PUNTUAL_CHECK\\API_PUNTUALCHECK\\obj\\",
+      "outputPath": "C:\\Users\\molin\\Downloads\\PUNTUAL_CHECK-master\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
