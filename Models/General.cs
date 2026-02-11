@@ -33,15 +33,6 @@ namespace API_PUNTUALCHECK.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 
-     public class Profesor
-    {
-        public int Id { get; set; }
-        public int UsuarioId { get; set; }
-        public string? Especialidad { get; set; }
-        public bool Activo { get; set; } = true;
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-    }
-
     [Table("estudiantes")]
     public class Estudiante
     {
@@ -185,4 +176,69 @@ namespace API_PUNTUALCHECK.Models
         [Column("created_at")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
+
+    [Table("profesores")]
+    public class Profesor
+    {
+        [Key]
+        [Column("id")]
+        public int Id { get; set; }
+    
+        [Column("usuario_id")]
+        public int UsuarioId { get; set; }
+    
+        [Column("especialidad")]
+        public string? Especialidad { get; set; }
+    
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
+    
+        [Column("created_at")]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    }
+    
+    [Table("cursos")]
+    public class Curso
+    {
+        [Key]
+        [Column("id")]
+        public int Id { get; set; }
+    
+        [Column("nombre")]
+        public string Nombre { get; set; } = string.Empty;
+    
+        [Column("codigo")]
+        public string? Codigo { get; set; }
+    
+        [Column("descripcion")]
+        public string? Descripcion { get; set; }
+    
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
+    
+        [Column("created_at")]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    }
+    
+    [Table("profesor_curso")]
+    public class ProfesorCurso
+    {
+        [Key]
+        [Column("id")]
+        public int Id { get; set; }
+    
+        [Column("profesor_id")]
+        public int ProfesorId { get; set; }
+    
+        [Column("curso_id")]
+        public int CursoId { get; set; }
+    
+        [Column("asignado_desde")]
+        public DateTime AsignadoDesde { get; set; } = DateTime.UtcNow;
+    
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
+    }
+
+    
 }
