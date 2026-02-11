@@ -33,6 +33,15 @@ namespace API_PUNTUALCHECK.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 
+     public class Profesor
+    {
+        public int Id { get; set; }
+        public int UsuarioId { get; set; }
+        public string? Especialidad { get; set; }
+        public bool Activo { get; set; } = true;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+    }
+
     [Table("estudiantes")]
     public class Estudiante
     {
