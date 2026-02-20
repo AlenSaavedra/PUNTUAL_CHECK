@@ -240,5 +240,25 @@ namespace API_PUNTUALCHECK.Models
         public bool Activo { get; set; } = true;
     }
 
+    [Table("estudiante_curso")]
+    public class EstudianteCurso
+    {
+        [Key]
+        [Column("id")]
+        public int Id { get; set; }
+    
+        [Column("estudiante_id")]
+        public int EstudianteId { get; set; }
+    
+        [Column("curso_id")]
+        public int CursoId { get; set; }
+    
+        [Column("fecha_inscripcion")]
+        public DateTime FechaInscripcion { get; set; } = DateTime.UtcNow;
+    
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
+    }
+
     
 }
