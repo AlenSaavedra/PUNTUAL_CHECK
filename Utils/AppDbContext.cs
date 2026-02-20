@@ -22,7 +22,7 @@ namespace API_PUNTUALCHECK.Utils
         public DbSet<Profesor> Profesores => Set<Profesor>();
         public DbSet<Curso> Cursos => Set<Curso>();
         public DbSet<ProfesorCurso> ProfesorCursos => Set<ProfesorCurso>();
-            
+        public DbSet<EstudianteCurso> EstudianteCursos => Set<EstudianteCurso>();
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
@@ -37,6 +37,7 @@ namespace API_PUNTUALCHECK.Utils
             mb.Entity<Profesor>().ToTable("profesores");
             mb.Entity<Curso>().ToTable("cursos");
             mb.Entity<ProfesorCurso>().ToTable("profesor_curso");
+            mb.Entity<EstudianteCurso>().ToTable("estudiante_curso");
         }
 
     }
