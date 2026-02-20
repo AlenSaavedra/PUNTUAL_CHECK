@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_PUNTUALCHECK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72ce3a348beb68010c268799e36becb7132ba252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7b33b69647fa50bc6698a1bec7893cf42799abe")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_PUNTUALCHECK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_PUNTUALCHECK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
