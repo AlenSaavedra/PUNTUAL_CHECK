@@ -14,6 +14,23 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(int.Parse(port));
 });
 
+// CONFIGURAR CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins(
+                "https://puntualfront-production.up.railway.app",  // Frontend en Railway
+                "http://localhost:5173",    // Vite local
+                "http://localhost:3000",    // React local
+                "http://localhost:4200"     // Angular local
+            )
+            .AllowAnyMethod()       // GET, POST, PUT, DELETE, PATCH
+            .AllowAnyHeader()       // Content-Type, Authorization, etc.
+            .AllowCredentials();    // Permite cookies y JWT
+    });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -28,7 +45,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Escribe tu token JWT aquí"
+        Description = "Escribe tu token JWT aquÃ­"
     });
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
@@ -72,15 +89,19 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Habilitar Swagger siempre (para testing en producción)
+//Acceso al Cors
+app.UseCors("AllowFrontend");
+
+// Habilitar Swagger siempre (para testing en producciÃ³n)
 app.UseSwagger();
 app.UseSwaggerUI();
 
 // Comentar HTTPS redirect para Railway
 // app.UseHttpsRedirection();
 
-app.UseAuthentication(); // <- debe ir ANTES de UseAuthorization
+app.UseAuthentication(); // <- debe ir DESPUÃ‰S de UseCors
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.Run();
