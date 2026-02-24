@@ -89,12 +89,15 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-//Acceso al Cors
-app.UseCors("AllowFrontend");
 
 // Habilitar Swagger siempre (para testing en producción)
 app.UseSwagger();
 app.UseSwaggerUI();
+
+
+//Acceso al Cors
+app.UseCors("AllowFrontend");
+
 
 // Comentar HTTPS redirect para Railway
 // app.UseHttpsRedirection();
