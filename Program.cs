@@ -14,20 +14,14 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(int.Parse(port));
 });
 
-// CONFIGURAR CORS
+//  CORS - CONFIGURACIÓN 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
+    options.AddDefaultPolicy(builder =>
     {
-        policy.WithOrigins(
-                "https://puntualfront-production.up.railway.app",  // Frontend en Railway
-                "http://localhost:5173",    // Vite local
-                "http://localhost:3000",    // React local
-                "http://localhost:4200"     // Angular local
-            )
-            .AllowAnyMethod()       // GET, POST, PUT, DELETE, PATCH
-            .AllowAnyHeader()       // Content-Type, Authorization, etc.
-            .AllowCredentials();    // Permite cookies y JWT
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
 
@@ -89,20 +83,17 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+// CORS - 
+app.UseCors();
 
-// Habilitar Swagger siempre (para testing en producción)
+// Habilitar Swagger siempre
 app.UseSwagger();
 app.UseSwaggerUI();
-
-
-//Acceso al Cors
-app.UseCors("AllowFrontend");
-
 
 // Comentar HTTPS redirect para Railway
 // app.UseHttpsRedirection();
 
-app.UseAuthentication(); // <- debe ir DESPUÉS de UseCors
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
